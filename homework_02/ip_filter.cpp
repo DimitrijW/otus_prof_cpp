@@ -1,4 +1,5 @@
 #include "ip_filter.h"
+#include <fstream>
 
 using namespace std;
 
@@ -25,4 +26,23 @@ vector<string> split(const string &str, char d)
     r.push_back(str.substr(start));
 
     return r;
+}
+
+int read_file()
+{
+    cout << "reaf_file" << endl;
+
+    string line;
+    ifstream myfile("ip_filter.tsv");
+    if(myfile.is_open())
+    {
+        while(getline(myfile,line))
+        {
+            cout << line << '\n';
+        }
+        myfile.close();
+    }
+
+    else cout << "Unable to open file" << endl; 
+    return 0;
 }

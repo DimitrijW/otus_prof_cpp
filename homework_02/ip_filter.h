@@ -9,4 +9,6 @@
 
 std::vector<std::string> split(const std::string &str, char d);
 
+int read_file();
+
 #endif

@@ -8,7 +8,7 @@
 #include <vector>
 
 std::vector<std::string> split(const std::string &str, char d);
-
-int read_file();
+//int read_file();
+int sort_ip(std::vector< std::vector<std::string> > ip_pool);
 
 #endif

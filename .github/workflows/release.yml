@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - 01_ci_cd
       - feature/github_actions
 
 jobs:
